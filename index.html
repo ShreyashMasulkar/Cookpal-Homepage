@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/Chef-hat-logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CookPal Recipes</title>
+  </head>
+  <body>
+    <section id="mobileDrawer">
+      <div><h id="MobileDrawerClose">x</h></div>
+      <div>
+        <div class="SiteLogo">
+          <img src="./assets/Cookpalicon.svg" alt="site_logo" />
+        </div>
+        <div class="UserProfile">
+          <img src="./assets/UserProfile.svg" alt="User Profile" />
+        </div>
+      </div>
+      <ul class="MobilenavOptions">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </section>
+    <main>
+      <nav>
+        <div id="MobileMenu" class="hide">
+          <img src="./assets/menu.svg" alt="site_logo" />
+        </div>
+        <div class="SiteLogo">
+          <img src="./assets/Cookpalicon.svg" alt="site_logo" />
+        </div>
+        <ul class="navOptions" class="hideNav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+        <div class="UserProfile hideNav">
+          <img src="./assets/UserProfile.svg" alt="User Profile" />
+        </div>
+      </nav>
+      <header>
+        <div id="headerImageDiv">
+          <img
+            id="headerImg"
+            src="./assets/MainTopImage.jpeg"
+            alt="header image background"
+          />
+          <div id="headerTxt">
+            <h3>Trending now</h3>
+            <h1>Mikes famous salad with cheese</h1>
+            <h2>By John Mike</h2>
+          </div>
+        </div>
+        <div id="SearchAndRadioContainer">
+          <h2>Search For Recipes</h2>
+          <div class="searchDiv">
+            <label for="searchInput"
+              ><img src="./assets/SearchLabel.svg" alt="search"
+            /></label>
+            <input
+              type="text"
+              name="search"
+              id="searchInput"
+              placeholder="Search for recipes......"
+            />
+            <button onclick="">
+              <img src="./assets/SearchButton.svg" alt="search" />
+            </button>
+          </div>
+        </div>
+      </header>
+      
+      <section class="toggleContainer">
+        <button id="toggleAll">
+          <span>All Recipies</span
+          ><img src="./assets/side_arrow.svg" alt="arrow" />
+        </button>
+        <button id="toggleVeg">
+          <span>Veg Recipes Only</span
+          ><img src="./assets/side_arrow.svg" alt="arrow" />
+        </button>
+        <button id="toggleNonVeg">
+          <span>Non Veg Recipies</span
+          ><img src="./assets/side_arrow.svg" alt="arrow" />
+        </button>
+        <button id="toggleLikedRecipes">
+          <span>Your Liked Recipies</span
+          ><img src="./assets/side_arrow.svg" alt="arrow" />
+        </button>
+      </section>
+      <section id="siteBody">
+        <div id="filterSection">
+          <h2>Filters</h2>
+          <h4>Rating</h4>
+          <input type="checkbox" id="greaterEqualToFour" /><label
+            for="greaterEqualToFour"
+          >
+            4 and above</label
+          >
+          <br />
+          <input type="checkbox" id="SmallerthenFour" /><label for="SmallerthenFour">
+            Below 4</label
+          >
+        </div>
+        <div id="recipieCardContainer"> </div>
+      </section>
+      <footer>
+        <section id="aboutUsSection">
+         
+          <p>
+            <h1><img src="./assets/Cookpalicon.svg" alt="Site_logo" /></h1>
+            Cookpal is a recipe website with a wide variety of delicious
+            recipes, easy-to-use search function. Join our community and let's
+            cook together!
+          </p>
+        </section>
+        <table id="FooterLinksSection">
+          <tr>
+            <th>Company</th>
+            <th>Resources</th>
+          </tr>
+          <tr>
+            <td><a href="#">Home</a></td>
+            <td><a href="#">Blog</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Explore</a></td>
+            <td><a href="#">Use Cases</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Team</a></td>
+            <td><a href="#">Testimonials</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">About Us</a></td>
+            <td><a href="#">Insights</a></td>
+          </tr>
+          <tr>
+            <td><a href="#">Activity</a></td>
+          </tr>
+        </table>
+        <section id="contactUsSection">
+          <h1><img src="./assets/Cookpalicon.svg" alt="site_logo" /></h1>
+          <p>Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>
+          <div>
+            <input
+              id="emailForSub"
+              type="text"
+              placeholder=" Your Email @"
+            /><button id="subscribe">Subscribe</button>
+          </div>
+        </section>
+      </footer>
+      <section id="socials">
+        <div><img src="./assets/Instagram.svg" alt="social" /></div>
+        <div><img src="./assets/Twitter.svg" alt="social" /></div>
+        <div><img src="./assets/Linkedin.svg" alt="social" /></div>
+        <div><img src="./assets/Facebook.svg" alt="social" /></div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
